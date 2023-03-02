@@ -1,0 +1,157 @@
+<div class="grid gap-3">
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+
+    <kendo-formfield>
+      <kendo-label [for]="Q1" text="Q1. What motivates you every day?" class="customizing-label"></kendo-label>
+      <kendo-textarea #Q1 [style.width.px]="200" formControlName="Q1" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q2" text="Q2. What things or activities make you happy?"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q2 [style.width.px]="200" formControlName="Q2" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q3" text="Q3. What do you enjoy doing in your free time?"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q3 [style.width.px]="200" formControlName="Q3" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q4" text="Q4. What is the best piece of advice you've received?"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q4 [style.width.px]="200" formControlName="Q4" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q5" text="Q5. Share your three hobbies!!" class="customizing-label"></kendo-label>
+      <kendo-textarea #Q5 [style.width.px]="200" formControlName="Q5" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q6" text="Q6. Favourite vacation place: For a week?" class="customizing-label"></kendo-label>
+      <kendo-textarea #Q6 [style.width.px]="200" formControlName="Q6" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q7" text="Q7. Favourite vacation place: For a month?" class="customizing-label"></kendo-label>
+      <kendo-textarea #Q7 [style.width.px]="200" formControlName="Q7" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q8" text="Q8. Mention your favourite:
+     Colour?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q8 [style.width.px]="200" formControlName="Q9" placeholder="Enter Colour"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q9" text="Q9. Mention your favourite:
+       Ice-Cream?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q9 [style.width.px]="200" formControlName="Q9" placeholder="Enter Flavour"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q10" text="Q10. Mention your favourite:
+         Actor?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q10 [style.width.px]="200" formControlName="Q10" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q11" text="Q11. Mention your favourite:
+           Actress?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q11 [style.width.px]="200" formControlName="Q11" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q12" text="Q12. Mention your favourite:
+             Festival?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q12 [style.width.px]="200" formControlName="Q12" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q13" text="Q13. Mention your favourite:
+               Singer?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q13 [style.width.px]="200" formControlName="Q13" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q14" text="Q14. Mention your favourite:
+                 Dancer?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q14 [style.width.px]="200" formControlName="Q14" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q15" text="Q15. Mention your favourite:
+                   Sports?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q15 [style.width.px]="200" formControlName="Q15" placeholder="Enter Name"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label class="k-form" [for]="Q16" text="Q16. Mention your favourite:
+                     Movie?" class="customizing-label"></kendo-label>
+      <kendo-textbox #Q16 [style.width.px]="200" formControlName="Q16" placeholder="Enter MovieName"
+        showSuccessIcon="initial" showErrorIcon="initial"></kendo-textbox>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q17" text="Q17. Share one accomplishment that you are most proud of !!"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q17 [style.width.px]="200" formControlName="Q17" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q18" text="Q18. As a child what did you wish to become when you grew up?"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q18 [style.width.px]="200" formControlName="Q18" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <kendo-formfield>
+      <kendo-label [for]="Q19" text="Q19. What was cool when you were young but isn’t cool now?"
+        class="customizing-label"></kendo-label>
+      <kendo-textarea #Q19 [style.width.px]="200" formControlName="Q19" placeholder="Leave a comment">
+      </kendo-textarea>
+      <kendo-formerror>Error: Answer is required</kendo-formerror>
+    </kendo-formfield>
+
+    <div class="k-form-buttons">
+      <button kendoButton [svgIcon]="svgIcon" [disabled]="!reactiveForm.valid">Submit</button>
+    </div>
+
+  </form>
+</div>

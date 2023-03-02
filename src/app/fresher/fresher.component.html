@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="p-3 mb-2 text-black">
+                <div class="border">
+                    <div class="p-3 bg-info bg-opacity-10 border border-info border-start-1 rounded-end">
+                        <div class="Fresher" [formGroup]="form">
+                            <kendo-formfield>
+                                <kendo-label [for]="fullName" text="Enter Your Full Name:"></kendo-label>
+                                <kendo-textbox formControlName="fullName" #fullName required></kendo-textbox>
+                                <kendo-formerror>Error: Full Name is required</kendo-formerror>
+                            </kendo-formfield>
+                            <kendo-formfield>
+                                <kendo-label  text="Upload your profile picture"></kendo-label>
+                                <kendo-upload >
+                                </kendo-upload>
+                                <!-- <kendo-fileselect [restrictions]="myRestrictions"></kendo-fileselect> -->
+                            </kendo-formfield>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
