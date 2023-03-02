@@ -1,0 +1,15 @@
+/*--- Footer --- */
+.container-fluid {
+    padding: 0 50px;
+}
+
+footer {
+    background: #f3f3f3;
+    position: relative;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    z-index: 9;
+}
+
+/*--- End Footer --- */

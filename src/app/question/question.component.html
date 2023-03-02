@@ -1,7 +1,37 @@
-<div class="grid gap-3">
-  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+<div class="content_block">
+  <div class="container-fluid">
+    <div class="row">
+      <form>
+        <div class="col-md-12 col-sm-12">
+          <div class="question_block mb-5">
+            <h2>1. Enter your full name</h2>
+            <kendo-textbox></kendo-textbox>
+          </div>
+          <div class="question_block mb-5">
+            <h2>2. Upload your photo</h2>
+            <kendo-fileselect [multiple]="false"></kendo-fileselect>
+          </div>
+          <div class="question_block mb-5">
+            <h2>3. What motivates you every day?</h2>
+            <kendo-textarea></kendo-textarea>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 text-center">
+          <button class="all_btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <div>
+
+
+
+
+<!-- <div class="grid gap-3">
+  <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()"> -->
+
+<!-- <div>
       <kendo-label [for]="Q1" text="1. Enter your full name"></kendo-label>
       <kendo-textbox #Q1></kendo-textbox>
     </div>
@@ -17,16 +47,16 @@
     <div>
       <kendo-label [for]="Q3" text="3. What motivates you every day?"></kendo-label>
       <kendo-textarea #Q3></kendo-textarea>
-    </div>
+    </div> -->
 
-    <!-- <kendo-formfield>
+<!-- <kendo-formfield>
       <kendo-label [for]="Q1" text="Q1. What motivates you every day?" class="customizing-label"></kendo-label>
       <kendo-textarea #Q1 [style.width.px]="200" formControlName="Q1" placeholder="Leave a comment">
       </kendo-textarea>
       <kendo-formerror>Error: Answer is required</kendo-formerror>
     </kendo-formfield> -->
 
-    <!-- <kendo-formfield>
+<!-- <kendo-formfield>
       <kendo-label [for]="Q2" text="Q2. What things or activities make you happy?"
         class="customizing-label"></kendo-label>
       <kendo-textarea #Q2 [style.width.px]="200" formControlName="Q2" placeholder="Leave a comment">
@@ -167,9 +197,9 @@
       <kendo-formerror>Error: Answer is required</kendo-formerror>
     </kendo-formfield> -->
 
-    <div class="k-form-buttons">
+<!-- <div class="k-form-buttons">
       <button kendoButton [svgIcon]="svgIcon" [disabled]="!reactiveForm.valid">Submit</button>
-    </div>
-
+    </div> -->
+<!-- 
   </form>
-</div>
+</div> -->
