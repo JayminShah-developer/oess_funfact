@@ -13,6 +13,7 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { IconsModule } from '@progress/kendo-angular-icons';
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { UploadsModule } from "@progress/kendo-angular-upload";
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -23,7 +24,8 @@ import { UploadsModule } from "@progress/kendo-angular-upload";
     AppComponent,
     HeaderComponent,
     FresherComponent,
-    QuestionComponent
+    QuestionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

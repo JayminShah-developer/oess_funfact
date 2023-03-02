@@ -1,14 +1,32 @@
 <div class="grid gap-3">
   <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
 
-    <kendo-formfield>
+    <div>
+      <kendo-label [for]="Q1" text="1. Enter your full name"></kendo-label>
+      <kendo-textbox #Q1></kendo-textbox>
+    </div>
+    <hr>
+    <div>
+      <kendo-label [for]="Q2" text="2. Upload your photo."></kendo-label>
+      <kendo-upload #Q2>
+      </kendo-upload>
+    </div>
+    <hr>
+
+
+    <div>
+      <kendo-label [for]="Q3" text="3. What motivates you every day?"></kendo-label>
+      <kendo-textarea #Q3></kendo-textarea>
+    </div>
+
+    <!-- <kendo-formfield>
       <kendo-label [for]="Q1" text="Q1. What motivates you every day?" class="customizing-label"></kendo-label>
       <kendo-textarea #Q1 [style.width.px]="200" formControlName="Q1" placeholder="Leave a comment">
       </kendo-textarea>
       <kendo-formerror>Error: Answer is required</kendo-formerror>
-    </kendo-formfield>
+    </kendo-formfield> -->
 
-    <kendo-formfield>
+    <!-- <kendo-formfield>
       <kendo-label [for]="Q2" text="Q2. What things or activities make you happy?"
         class="customizing-label"></kendo-label>
       <kendo-textarea #Q2 [style.width.px]="200" formControlName="Q2" placeholder="Leave a comment">
@@ -147,7 +165,7 @@
       <kendo-textarea #Q19 [style.width.px]="200" formControlName="Q19" placeholder="Leave a comment">
       </kendo-textarea>
       <kendo-formerror>Error: Answer is required</kendo-formerror>
-    </kendo-formfield>
+    </kendo-formfield> -->
 
     <div class="k-form-buttons">
       <button kendoButton [svgIcon]="svgIcon" [disabled]="!reactiveForm.valid">Submit</button>
